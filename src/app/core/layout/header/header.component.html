@@ -1,0 +1,25 @@
+<div class="header-wrapper">
+    <div class="header-container">
+        <div class="header-left">
+            <div class="header-actions">
+                <a class="bttn-icon-info mx-3">
+                    <i class="bi bi-arrow-left"></i>
+                </a>
+            </div>
+            <div class="separator-vr"></div>
+            <div class="header-title ms-2 me-3">{{ pageTitle }}</div>
+        </div>
+
+        <div class="header-right">
+            <div class="header-template-left">
+                <ng-content select="[CanvasHeaderLeft]"></ng-content>
+            </div>
+            <div class="header-template-center">
+                <ng-content select="[CanvasHeaderCenter]"></ng-content>
+            </div>
+            <div class="header-template-right">
+                <ng-content select="[CanvasHeaderRight]"></ng-content>
+            </div>
+        </div>
+    </div>
+</div>

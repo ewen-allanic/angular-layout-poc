@@ -1,0 +1,25 @@
+.app-container {
+    overflow-x: hidden;
+}
+
+main {
+    padding-bottom: 3.75rem;
+}
+
+.navbar-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+@media (min-width: 992px) {
+    .navbar-container {
+        display: none;
+    }
+
+    main {
+        padding-bottom: 0;
+    }
+}

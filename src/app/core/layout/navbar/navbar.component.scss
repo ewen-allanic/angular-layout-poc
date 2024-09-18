@@ -1,0 +1,37 @@
+:host {
+    display: block;
+    height: 3.75rem;
+}
+
+.navbar {
+    height: 100%;
+}
+
+.nav-list {
+    list-style-type: none;
+}
+
+.nav-link {
+    color: #495057;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    background-color: #e9ecef;
+}
+
+.nav-link i {
+    font-size: 24px;
+}
+
+@media (min-width: 768px) {
+    .nav-link {
+        flex-direction: row !important;
+    }
+
+    .nav-link i {
+        margin-right: 10px;
+    }
+}
