@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 interface NavItem {
@@ -16,6 +16,8 @@ interface NavItem {
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
+  @Input() isDesktop = false;
+
   navItems: NavItem[] = [
     { icon: 'bi-house', route: '/home', label: 'Home' },
     { icon: 'bi-person', route: '/profile', label: 'Profile' },

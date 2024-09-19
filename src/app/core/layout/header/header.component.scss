@@ -1,14 +1,11 @@
 :host {
-    position: absolute;
-    top: 0.5rem;
-    left: 50%;
-    transform: translateX(-50%);
-    width: calc(100% - 2rem);
-    z-index: 1000;
+    display: block;
+    width: 100%;
 }
 
 .header-wrapper {
-    width: 100%;
+    width: calc(100% - 2rem);
+    margin: 0 auto;
 }
 
 .header-container {
@@ -70,7 +67,7 @@
 }
 
 @media (max-width: 768px) {
-    :host {
+    .header-wrapper {
         width: calc(100% - 1rem);
     }
 }
